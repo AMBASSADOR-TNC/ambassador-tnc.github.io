@@ -1,5 +1,5 @@
-# Pages Hardening Limitation
+# Pages deployment contract
 
-This repository's default branch intentionally contains no GitHub Pages source, build configuration, or deployment workflow. The currently configured Pages endpoint therefore has no repository-owned content contract to validate or protect with a required status check.
+This repository now publishes the static WENEVER universal-entry mirror at the owner Pages root. The prior empty-repository limitation is superseded.
 
-Before adding a Pages workflow or branch-protection requirement, establish and review the intended source, publishing method, and public ownership for this endpoint. Do not treat this repository as a validated production site until that decision exists.
+It is a temporary verified HTTPS deployment while `wenevergonnaclose.com` remains the intended canonical domain and awaits GitHub Pages certificate issuance. This repository must not contain a `CNAME` file or claim the canonical domain.

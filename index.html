@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>wenevergonnaclose · Universal Entry</title>
+  <link rel="stylesheet" href="css/identity.css">
+</head>
+<body>
+  <main id="engine">
+    <header class="engine-header">
+      <h1>+U Universal Entry</h1>
+      <p>Start here. Your sequence stays private and guides you to the right side.</p>
+    </header>
+
+    <section class="engine-step" data-step="1">
+      <h2>1. Choose your base stick figure</h2>
+      <div class="figure-grid">
+        <button class="figure-card" type="button" data-base="adult-man" aria-pressed="false">
+          <div class="stick-figure" aria-hidden="true"></div>
+          <span>Adult Man +U</span>
+        </button>
+        <button class="figure-card" type="button" data-base="adult-woman" aria-pressed="false">
+          <div class="stick-figure" aria-hidden="true"></div>
+          <span>Adult Woman +U</span>
+        </button>
+        <button class="figure-card" type="button" data-base="youth-boy" aria-pressed="false">
+          <div class="stick-figure" aria-hidden="true"></div>
+          <span>Youth Boy +U</span>
+        </button>
+        <button class="figure-card" type="button" data-base="youth-girl" aria-pressed="false">
+          <div class="stick-figure" aria-hidden="true"></div>
+          <span>Youth Girl +U</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="engine-step" data-step="2">
+      <h2>2. How do you feel right now?</h2>
+      <p class="step-note">Choose one black-and-white emotion stick figure.</p>
+      <div class="emotion-grid" id="present-emotions">
+        <button class="emotion-card" type="button" data-present="calm" aria-pressed="false">
+          <div class="stick-figure calm" aria-hidden="true"></div>
+          <span>Calm</span>
+        </button>
+        <button class="emotion-card" type="button" data-present="overwhelmed" aria-pressed="false">
+          <div class="stick-figure overwhelmed" aria-hidden="true"></div>
+          <span>Overwhelmed</span>
+        </button>
+        <button class="emotion-card" type="button" data-present="hopeful" aria-pressed="false">
+          <div class="stick-figure hopeful" aria-hidden="true"></div>
+          <span>Hopeful</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="engine-step" data-step="3">
+      <h2>3. How do you hope to feel?</h2>
+      <p class="step-note">Choose one future emotion stick figure.</p>
+      <div class="emotion-grid" id="future-emotions">
+        <button class="emotion-card" type="button" data-future="steady" aria-pressed="false">
+          <div class="stick-figure steady" aria-hidden="true"></div>
+          <span>Steady</span>
+        </button>
+        <button class="emotion-card" type="button" data-future="proud" aria-pressed="false">
+          <div class="stick-figure proud" aria-hidden="true"></div>
+          <span>Proud</span>
+        </button>
+        <button class="emotion-card" type="button" data-future="peaceful" aria-pressed="false">
+          <div class="stick-figure peaceful" aria-hidden="true"></div>
+          <span>Peaceful</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="engine-step" data-step="4">
+      <h2>4. Your high school graduation year</h2>
+      <p class="step-note">This selects your next safe step: The Table for youth, or The Counter for adults.</p>
+      <div class="grad-input">
+        <label for="gradYear">Graduation year</label>
+        <input type="number" id="gradYear" min="1900" inputmode="numeric" autocomplete="off" placeholder="YYYY">
+      </div>
+    </section>
+
+    <section class="engine-step" data-step="5">
+      <h2>5. Confirm your lane</h2>
+      <p class="step-note">This private browser-only sequence chooses your first Whole Donuts or Nurtured Chef space. It does not create an account or collect an email address.</p>
+      <div id="collegeConfirmation" class="confirmation" hidden>
+        <label>
+          <input type="checkbox" id="underCollegeConfirmed">
+          I confirm I am entering the under-college path.
+        </label>
+      </div>
+      <button id="routeButton" type="button">Enter your lane</button>
+      <p id="routeMessage" class="route-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer class="engine-footer">
+      <p>
+        Your route is private. Each destination offers a free next step and a way to pass something useful on.
+      </p>
+      <p><a href="guide.html">Read the universal-entry guide</a></p>
+    </footer>
+  </main>
+
+  <script src="js/identity-engine.js"></script>
+</body>
+</html>
